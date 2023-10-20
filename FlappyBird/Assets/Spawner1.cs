@@ -21,8 +21,8 @@ public class Spawner1 : MonoBehaviour
     }
     void SpawnPipes()
     {
-        float randNumb = Random.Range(0.5f, 1.5f);
-        gameObject.transform.position = new Vector3(20, randNumb, 0);
+        float randNumb = Random.Range(-10f, -9f);
+        gameObject.transform.position = new Vector3(30, randNumb, 10);
         Instantiate(myPrefab, gameObject.transform.position, Quaternion.identity);
     }
 }
