@@ -684,6 +684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6340645232255451556}
   - component: {fileID: -76662646781586310}
+  - component: {fileID: 7436880431627184562}
   m_Layer: 0
   m_Name: Pipes 1
   m_TagString: score
@@ -720,3 +721,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2570ab7bdc5bf849a09ce30bffa1d2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!68 &7436880431627184562
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7124492065810029106}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.20635366, y: -2.8613307}
+  - {x: 0.21266961, y: -0.6824095}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnPipes", 0f, Random.Range(1f, 2f));
+        InvokeRepeating("SpawnPipes", 0f, 1.5f);
     }
     
     // Update is called once per frame

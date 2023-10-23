@@ -1,3 +1,4 @@
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 public class PlayerJump : MonoBehaviour
@@ -7,6 +8,10 @@ public class PlayerJump : MonoBehaviour
     public float gravityScale = 2;
     public float fallingGravityScale = 2;
     public float Score = 0;
+    void Start()
+    {
+        gameObject.tag = "Player";
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -23,6 +28,13 @@ public class PlayerJump : MonoBehaviour
         }
     }
     private void OnCollisionEnter2D(Collision2D collision) {
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "score"){
+            Score++;
+            Debug.Log(Score);
+            Destroy(collision.gameObject.GetComponent("EdgeCollider2D"));
+        } else {
+            Debug.Log("Final Score: " + Score);
+            Destroy(gameObject);
+        }
     }
 }
